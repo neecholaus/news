@@ -3,5 +3,9 @@ services:
   nginx:
     build:
       context: ./docker/nginx
+    volumes:
+      - ./:/var/www
   php:
     image: php:7.4-fpm
+    volumes:
+      - ./:/var/www
