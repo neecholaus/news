@@ -3,3 +3,5 @@ services:
   nginx:
     build:
       context: ./docker/nginx
+  php:
+    image: php:7.4-fpm
