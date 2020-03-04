@@ -12,4 +12,3 @@ services:
       - ./:/var/www
   mysql:
     build: ./docker/mysql
-    environment
