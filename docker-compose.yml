@@ -6,6 +6,7 @@ services:
     volumes:
       - ./:/var/www
   php:
-    image: php:7.4-fpm
+    build:
+      context: ./docker/php
     volumes:
       - ./:/var/www
